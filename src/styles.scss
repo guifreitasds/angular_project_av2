@@ -1,0 +1,203 @@
+/* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{ /* Raiz do código para armazenamento de cores, fontes, etc */
+    --primarypurple: #741b47;
+    --primarysalmon: #ffc9ab;
+    --secondarysalmon: #fff2eb;
+
+    --primaryfont: 'Noto Serif', serif;
+}
+
+body{
+    background-color: var(--secondarysalmon);
+}
+
+header{
+    position: relative;
+    display: flex; /* Display flex, usado para alinhamento da imagem com titulo no header */
+    background-color: var(--primarysalmon);
+    width: 100%;
+    height: 100px;
+}
+
+header{
+    justify-content: center;
+}
+
+div.logo{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+header > div.logo > h1{
+    align-self: center;
+
+    color: var(--primarypurple);
+    font-family: var(--primaryfont);
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+
+header > div.logo > img{
+    align-self: center;
+
+    width: 115px;
+    padding-right: 5px;
+}
+
+header > div.registro > a{
+    align-self: center;
+    text-align: right;
+    padding: 6px;
+}
+
+header > div.registro{
+    display: flex;
+    position: absolute;
+    top: 32%;
+    right: 0.2%;
+}
+
+div.registro > a{
+    font-size: 1em;
+    text-decoration: none;
+    transition-duration: 300ms;
+    color: #741b4899;
+}
+
+div.registro > a:hover{
+    color: var(--primarypurple);
+}
+
+div.icon {
+    display: none;
+}
+
+div.icon2{
+    display: none;
+}
+
+main > nav{
+    margin-left: 0px;
+    text-align: left;
+    background-color:var(--primarypurple);
+    width: 98.6;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > nav > a{
+    padding: 11px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+main > nav > p{
+    color: #ffff;
+}
+
+
+main > nav > a:hover{
+    background-color: white;
+    color: var(--primarypurple);
+    transition-duration: 0.5s; /* Efeito slow nos links da navbar */
+}
+
+main h1{
+    font-size: 5em;
+    font-family: var(--primaryfont);
+    font-weight: 700;
+}
+
+section{
+    margin-top: 50px;
+}
+
+// span.firstletter{
+//     font-family: var(--primaryfont);
+//     color: var(--primarypurple);
+// }
+
+span.midwords{
+    color: var(--primarypurple)
+}
+
+p.sub{
+    font-size: 2em;
+    margin: 30px 0px;
+}
+
+p.fromsub{
+    font-size: 16Spx;
+    margin: 30px 0px;
+}
+
+main.coroamain{
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    box-shadow: 4px 3px 4px 0px #00000038;
+}
+
+footer{
+    margin-top: 50px;
+    background: #741b47;
+    padding-bottom:  10px;
+    // color: white;
+}
+
+div.footerdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc9ab;
+    color: #741b47;
+}
+
+div.footerdiv > p{
+    margin-top: 10px;
+    align-self: flex-start;
+    
+}
+
+div.footerdiv > div.firstcol{
+    display: flex;
+    align-self: center;
+}
+
+div.footerdiv a{
+    display: flex;
+    text-decoration: none;
+    color: #741b47;
+    font-weight: bold;
+}
+
+div.footerdiv a:hover{
+    text-decoration:underline;
+}
+
+a > p{
+    padding: 5px;
+}
+
+footer > div > img{
+    width: 100px;
+}
+
+
+.primarypurple{
+    color: var(--primarypurple);
+}

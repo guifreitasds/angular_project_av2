@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.O.R.O.A (W.I.P)</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body onresize="mudarTamanho()">
+    <header>
+        <div class="logo">
+            <img src="assets/COROA.png" alt="Logo do COROA">
+            <h1>{{ 'c . o . r . o . a' | uppercase }}</h1>
+        </div>
+    </header>
+    <main class="coroamain">
+        <!-- Seção Quem Somos -->
+        <section *ngIf="posts && posts.length > 0">
+            <h1>Quem somos?</h1>
+            <p class="subtext">
+                O {{ 'c.o.r.o.a' | uppercase }} é um aplicativo voltado para o cuidado com relação a
+                saúde do idoso, ajudando em diversos aspectos do seu dia a dia
+                através de diversas funcionalidades que auxiliam no seu cuidado diário!
+            </p>
+            <ul> <!-- Lista de Funcionalidades -->
+                <p class="caption">API funcionando:</p>
+                <li *ngFor="let post of posts">{{post.title}}</li>
+            </ul>
+        </section>
+    </main>
+    <footer> <!-- Footer utilizado para links extras -->
+        <div class="footerdiv">
+            <img src="assets/COROA-nofill.png" alt="Logo do C.O.R.O.A">
+            <div class="firstcol">
+                <a href="#">
+                    <p class="firstrow">Privacidade</p>
+                </a>
+                <a href="#">
+                    <p class="thirdrow">Acessibilidade</p>
+                </a>
+                <a href="mailto:coroahealth@gmail.com">
+                    <p class="thirdrow">Entre em contato</p>
+                </a>
+            </div>
+        </div>
+        <p style="padding-top: 10px; text-align: center;">
+			Rua Guilherme Pinto, 114 - Graças, Recife-PE
+		</p>
+        <p style="text-align: center; font-weight: bold;">
+           &copy; 2023 C.O.R.O.A Health
+        </p>
+    </footer>
+
+    <script src="scripts/scriptgeneral.js"></script>
+    <script src="scripts/script-carrosel.js"></script>
+</body>
+</html>
