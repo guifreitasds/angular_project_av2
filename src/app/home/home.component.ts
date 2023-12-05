@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { RouterOutlet } from '@angular/router';
-import { RouterModule } from '@angular/router';
+import { RouterOutlet, RouterModule } from '@angular/router';
 import { DataService } from '../services/data.service';
-
+import { TextColorDirective } from '../directives/text-color.directive';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterModule],
+  imports: [
+    CommonModule, 
+    RouterOutlet, 
+    RouterModule, 
+    TextColorDirective
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

@@ -1,27 +1,11 @@
-// import { Directive, ElementRef, Input, Renderer2 } from '@angular/core';
+import { Directive, HostBinding } from '@angular/core';
 
-// @Directive({
-//   selector: '[appTextColor]',
-// })
-// export class TextColorDirective {
-//   // @Input('appTextColor') color: string = 'black';
-
-//   // constructor(private eleRef: ElementRef) {
-//   //   eleRef.nativeElement.style.color = 'green';
-//   // }
-  
-// }
-
-
-import { Directive, ElementRef } from '@angular/core';
- 
 @Directive({
-  selector: '[appTextColor]'
+  selector: '[appTextColor]',
+  standalone: true
 })
 export class TextColorDirective {
- 
-  constructor(private elRef: ElementRef) {
-    elRef.nativeElement.style.color = 'white';
-  }
- 
+  @HostBinding('class.whiteText') isWhiteText: boolean = true;
+
+  constructor() {}
 }

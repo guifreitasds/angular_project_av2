@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     PipeComponent,
-    TextColorDirective
+    TextColorDirective,
   ],
   imports: [
     BrowserModule,
