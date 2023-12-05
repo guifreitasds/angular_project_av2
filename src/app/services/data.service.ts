@@ -7,17 +7,11 @@ import { Observable } from 'rxjs';
 })
 export class DataService {
 
-  private apiUrl = 'https://jsonplaceholder.typicode.com'; // Exemplo de uma API de teste
+  private apiUrl = 'https://jsonplaceholder.typicode.com';
 
   constructor(private http: HttpClient) { }
 
-  // Método para obter dados do servidor
   getData(): Observable<any> {
     return this.http.get(`${this.apiUrl}/posts`);
-  }
-
-  // Método para enviar dados para o servidor (exemplo)
-  postData(data: any): Observable<any> {
-    return this.http.post(`${this.apiUrl}/posts`, data);
   }
 }
